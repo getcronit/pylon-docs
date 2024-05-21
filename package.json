@@ -16,7 +16,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@atsnek/jaen": "^1.0.0-rc.82",
+    "@atsnek/jaen": "^1.0.0-rc.83",
     "@atsnek/jaen-fields-mdx": "^1.0.0-rc.19",
     "@docsearch/react": "^3.6.0",
     "@radix-ui/react-dialog": "^1.0.5",
