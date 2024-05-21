@@ -21,8 +21,8 @@ const config: GatsbyConfig = {
         },
         sentry: {
           org: "cronit",
-          project: "jaen-template",
-          dsn: "https://8cf5387b2f582fe891bec2f517ed09dc@sentry.cronit.io/5",
+          project: "pylon-docs",
+          dsn: "https://376807edb69224c1679c8a38499311ff@sentry.cronit.io/18",
         },
       },
     },
