@@ -270,12 +270,15 @@ const Layout: React.FC<LayoutProps> = ({ children, pageProps }) => {
               </header>
             )}
             <Prose>
-              {!isHomePage && (
-                <>
-                  <p>{page.jaenPageMetadata?.description}</p>
-                  <hr />
-                </>
-              )}
+              <p
+                className={cn({
+                  lead: isHomePage,
+                })}
+              >
+                {page.jaenPageMetadata?.description}
+              </p>
+
+              {!isHomePage ? <hr /> : <br />}
             </Prose>
 
             {children}
