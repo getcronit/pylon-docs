@@ -232,10 +232,10 @@
     vfile-message "^4.0.2"
     vfile-statistics "^3.0.0"
 
-"@atsnek/jaen@^1.0.0-rc.81":
-  version "1.0.0-rc.81"
-  resolved "https://registry.yarnpkg.com/@atsnek/jaen/-/jaen-1.0.0-rc.81.tgz#1b9331a04e90c05e861042065b1fe55f6efd6eab"
-  integrity sha512-ZliC052OADw7ZYCNMoxHPPqai1T4wUlW0zRIUCNDgbRvh4Ez6yPpDBmztwydwzE6tBVDRafZJ2SaJmWM2qmXTA==
+"@atsnek/jaen@^1.0.0-rc.82":
+  version "1.0.0-rc.82"
+  resolved "https://registry.yarnpkg.com/@atsnek/jaen/-/jaen-1.0.0-rc.82.tgz#edc5fa273b6f15ce89479ddbbc7cccc2837b2b0f"
+  integrity sha512-050OqW9g3y6PDBWdKUEybH2UTgx6xVFMcPZfmBbjHpZuiUsH8HVEEFYinHf0cGopquPW5puU8hD7HwrWSWsdmg==
   dependencies:
     "@chakra-ui/icons" "^2.1.1"
     "@chakra-ui/react" "^2.8.0"
