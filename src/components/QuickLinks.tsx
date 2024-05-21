@@ -47,7 +47,7 @@ export const QuickLinks: React.FC<{
 QuickLinks.displayName = "QuickLinks";
 QuickLinks.defaultProps = {
   children: `
-<QuickLinks
+<QuickLink
   title="Installation"
   description="Get started with Pylon in minutes."
   href="/docs/installation"
