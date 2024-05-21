@@ -7,7 +7,7 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-jaen`,
       options: {
         remote: {
-          repository: "cronitio/jaen-template",
+          repository: "cronitio/pylon-docs",
         },
         zitadel: {
           organizationId: "252746033782587395",
@@ -15,7 +15,7 @@ const config: GatsbyConfig = {
           authority: "https://accounts.cronit.io",
           redirectUri:
             process.env.NODE_ENV === "production"
-              ? "https://jaen.cronit.io"
+              ? "https://pylon.cronit.io"
               : "http://localhost:8000",
           projectIds: [],
         },

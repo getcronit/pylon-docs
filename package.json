@@ -16,25 +16,35 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@atsnek/jaen": "^1.0.0-rc.77",
+    "@atsnek/jaen": "^1.0.0-rc.80",
+    "@atsnek/jaen-fields-mdx": "^1.0.0-rc.19",
+    "@docsearch/react": "^3.6.0",
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "focus-visible": "^5.2.0",
     "gatsby": "^5.13.3",
     "gatsby-jaen-mailpress": "^0.0.6",
     "gatsby-plugin-jaen": "^1.0.0-rc.98",
+    "github-slugger": "^2.0.0",
     "lucide-react": "^0.363.0",
+    "prism-react-renderer": "^2.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwind-merge": "^2.2.2",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.13",
     "@types/node": "^20.11.19",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
     "autoprefixer": "^10.4.19",
     "gatsby-plugin-postcss": "^6.13.1",
     "postcss": "^8.4.38",
+    "postcss-focus-visible": "^9.0.1",
+    "prettier-plugin-tailwindcss": "^0.5.14",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
   }

@@ -2,46 +2,25 @@ import * as React from "react";
 import { Link, HeadFC, PageProps } from "gatsby";
 import { PageConfig } from "@atsnek/jaen";
 
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-};
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-};
-
-const paragraphStyles = {
-  marginBottom: 48,
-};
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-};
-
 const NotFoundPage: React.FC<PageProps> = () => {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
+    <div className="flex flex-col items-center justify-center h-full">
+      <h2 className="text-sm font-medium text-slate-900 dark:text-white">
+        404
+      </h2>
+      <h1 className="mt-3 text-3xl text-slate-900 dark:text-white">
+        Page not found
+      </h1>
+      <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
+        Sorry, we couldn’t find the page you’re looking for.
       </p>
-    </main>
+      <Link
+        className="mt-8 text-sm font-medium text-slate-900 dark:text-white"
+        to="/"
+      >
+        Go back home
+      </Link>
+    </div>
   );
 };
 

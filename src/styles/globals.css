@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './fonts.css';
+@import './docsearch.css';
+@import './prism.css';
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -73,4 +77,8 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.cm-editor {
+  height: 60dvh
 }
