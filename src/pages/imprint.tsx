@@ -1,4 +1,5 @@
 import { PageConfig } from "@atsnek/jaen";
+import { graphql } from "gatsby";
 
 const Page = () => {
   return (
@@ -27,3 +28,9 @@ export default Page;
 export const pageConfig: PageConfig = {
   label: "Imprint",
 };
+
+export const query = graphql`
+  query ($jaenPageId: String!) {
+    ...JaenPageQuery
+  }
+`;

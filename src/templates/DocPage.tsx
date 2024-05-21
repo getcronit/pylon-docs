@@ -1,9 +1,10 @@
+import { DocEditor } from "@/components/DocEditor";
 import { PageConfig } from "@atsnek/jaen";
 import { PageProps, graphql } from "gatsby";
 import * as React from "react";
 
 const Page: React.FC<PageProps> = () => {
-  return null;
+  return <DocEditor />;
 };
 
 export default Page;
