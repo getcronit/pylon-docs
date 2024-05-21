@@ -7,6 +7,9 @@ import { HeroBackground } from "@/components/HeroBackground";
 
 import { cn } from "@/lib/utils";
 
+import imgBlurIndigo from "../images/blur-indigo.png";
+import imgBlurCyan from "../images/blur-cyan.png";
+
 const codeLanguage = "javascript";
 const code = `import {defineService} from "@getcronit/pylon";
 
@@ -41,9 +44,9 @@ export function Hero() {
       <div className="py-16 sm:px-2 lg:relative lg:py-20 lg:px-0">
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 px-4 lg:max-w-8xl lg:grid-cols-2 lg:px-8 xl:gap-x-16 xl:px-12 max-w-">
           <div className="relative z-10 md:text-center lg:text-left">
-            <StaticImage
+            <img
               className="absolute bottom-full right-full -mr-72 -mb-56 opacity-50"
-              src={"../images/blur-indigo.png"}
+              src={imgBlurIndigo}
               alt=""
               width={530}
               height={530}
@@ -72,16 +75,16 @@ export function Hero() {
               <HeroBackground className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 lg:left-0 lg:translate-x-0 lg:translate-y-[-60%]" />
             </div>
             <div className="relative">
-              <StaticImage
+              <img
                 className="absolute -top-64 -right-64"
-                src={"../images/blur-cyan.png"}
+                src={imgBlurCyan}
                 alt=""
                 width={530}
                 height={530}
               />
-              <StaticImage
+              <img
                 className="absolute -bottom-40 -right-44"
-                src={"../images/blur-cyan.png"}
+                src={imgBlurIndigo}
                 alt=""
                 width={567}
                 height={567}
