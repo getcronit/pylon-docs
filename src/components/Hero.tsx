@@ -144,7 +144,7 @@ export function Hero() {
                       }) => (
                         <pre
                           className={cn(className, "flex overflow-x-auto pb-6")}
-                          style={style}
+                          // style={style}
                         >
                           <code className="px-4">
                             {tokens.map((line, lineIndex) => (
