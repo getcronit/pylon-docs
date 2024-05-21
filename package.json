@@ -16,7 +16,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@atsnek/jaen": "^1.0.0-rc.80",
+    "@atsnek/jaen": "^1.0.0-rc.81",
     "@atsnek/jaen-fields-mdx": "^1.0.0-rc.19",
     "@docsearch/react": "^3.6.0",
     "@radix-ui/react-dialog": "^1.0.5",
@@ -26,7 +26,7 @@
     "focus-visible": "^5.2.0",
     "gatsby": "^5.13.3",
     "gatsby-jaen-mailpress": "^0.0.6",
-    "gatsby-plugin-jaen": "^1.0.0-rc.98",
+    "gatsby-plugin-jaen": "^1.0.0-rc.99",
     "github-slugger": "^2.0.0",
     "lucide-react": "^0.363.0",
     "prism-react-renderer": "^2.3.1",

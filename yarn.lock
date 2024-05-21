@@ -232,10 +232,10 @@
     vfile-message "^4.0.2"
     vfile-statistics "^3.0.0"
 
-"@atsnek/jaen@^1.0.0-rc.80":
-  version "1.0.0-rc.80"
-  resolved "https://registry.yarnpkg.com/@atsnek/jaen/-/jaen-1.0.0-rc.80.tgz#76587a26ca75671629c9ae7467149fb977d22e66"
-  integrity sha512-ELYoEXW4NibG7CvlDcXx5ng6xMWf4FXbvzhYo4md8W5FYcoZah9h/uwZzkGtcxERtCn0moqP+KtWr/gDwQQdiA==
+"@atsnek/jaen@^1.0.0-rc.81":
+  version "1.0.0-rc.81"
+  resolved "https://registry.yarnpkg.com/@atsnek/jaen/-/jaen-1.0.0-rc.81.tgz#1b9331a04e90c05e861042065b1fe55f6efd6eab"
+  integrity sha512-ZliC052OADw7ZYCNMoxHPPqai1T4wUlW0zRIUCNDgbRvh4Ez6yPpDBmztwydwzE6tBVDRafZJ2SaJmWM2qmXTA==
   dependencies:
     "@chakra-ui/icons" "^2.1.1"
     "@chakra-ui/react" "^2.8.0"
@@ -8489,10 +8489,10 @@ gatsby-plugin-image@^3.11.0, gatsby-plugin-image@^3.13.1:
     objectFitPolyfill "^2.3.5"
     prop-types "^15.8.1"
 
-gatsby-plugin-jaen@^1.0.0-rc.98:
-  version "1.0.0-rc.98"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-jaen/-/gatsby-plugin-jaen-1.0.0-rc.98.tgz#0f4664330afd6e0095f4a042dd5240454d1a0a82"
-  integrity sha512-Hf9qnQ3fJZw2otA7UxugG82+xDS1+p/1Z5U/kw87TLMM7WiEkbmqSkd6mDCy5F5X/kXQGohA9bpbzKL3Du8aEg==
+gatsby-plugin-jaen@^1.0.0-rc.99:
+  version "1.0.0-rc.99"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-jaen/-/gatsby-plugin-jaen-1.0.0-rc.99.tgz#f46436dc3a9c3801d6ca810d38d06d38566524ae"
+  integrity sha512-8i2pONd38/ThV7NxNxjWvhvzN1tQCbpL5qupuW5osOZK0lcCDSo3Jx/Ni/tK8dyI/NmjEbQq4wRElgJDzoBwxg==
   dependencies:
     "@chakra-ui/react" "^2.8.0"
     "@emotion/react" "^11.11.1"
