@@ -1,8 +1,8 @@
 {
-  "name": "jaen-template",
+  "name": "pylon-docs",
   "version": "1.0.0",
   "private": true,
-  "description": "jaen-template",
+  "description": "Documentation for Pylon",
   "author": "Nico Schett  <nico.schett@cronit.io>",
   "keywords": [
     "gatsby"
