@@ -72,6 +72,7 @@ const Header: React.FC<{
       <div className="relative flex basis-0 justify-end gap-6 sm:gap-8 md:flex-grow">
         <Link
           href="https://github.com/getcronit/pylon"
+          isExternal
           className="group"
           aria-label="Pylon on GitHub"
         >
