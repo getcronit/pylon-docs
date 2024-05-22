@@ -294,7 +294,7 @@ const Layout: React.FC<LayoutProps> = ({ children, pageProps }) => {
             pages={[
               {
                 id: "JaenPage /",
-                title: "Introduction",
+                title: "Getting started",
               },
               ...docsIndex.childPages.map((doc) => ({
                 id: doc.id,
@@ -302,7 +302,7 @@ const Layout: React.FC<LayoutProps> = ({ children, pageProps }) => {
               })),
             ]}
             currentPage={{
-              id: page.jaenPageId,
+              id: page.id,
               title: page.jaenPageMetadata?.title || "Untitled",
             }}
           />
