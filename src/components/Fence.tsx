@@ -2,13 +2,17 @@ import { Fragment } from "react";
 import { Highlight } from "prism-react-renderer";
 
 export const Fence: React.FC<{
-  language: string;
+  language?: string;
   children: string;
   className?: string;
-}> = ({ children = "", language = "js", className }) => {
+}> = ({ children = "", language, className }) => {
   console.log("Fence", children, language);
 
   if (className?.match(/language-([a-z]+)/)) {
+    if (!language) {
+      language = className.replace("language-", "");
+    }
+
     return (
       <Highlight
         code={children.trimEnd()}
