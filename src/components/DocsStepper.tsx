@@ -7,18 +7,24 @@ import {
 import { useMemo } from "react";
 
 export interface DocsStepperProps {
-  pages: JaenPage[];
-  currentPage: JaenPage;
+  pages: {
+    id: string;
+    title: string;
+  }[];
+  currentPage: {
+    id: string;
+    title: string;
+  };
 }
 
 const Component: React.FC<DocsStepperProps> = ({ pages, currentPage }) => {
   const previousPage = useMemo(() => {
-    const index = pages.findIndex((doc) => doc.slug === currentPage.slug);
+    const index = pages.findIndex((doc) => doc.id === currentPage.id);
     return pages[index - 1];
   }, [pages, currentPage]);
 
   const nextPage = useMemo(() => {
-    const index = pages.findIndex((doc) => doc.slug === currentPage.slug);
+    const index = pages.findIndex((doc) => doc.id === currentPage.id);
     return pages[index + 1];
   }, [pages, currentPage]);
 
@@ -36,8 +42,7 @@ const Component: React.FC<DocsStepperProps> = ({ pages, currentPage }) => {
               to={manager.pagePath(previousPage.id)}
               className="text-base font-semibold text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
             >
-              <span aria-hidden="true">&larr;</span>{" "}
-              {previousPage.jaenPageMetadata?.title}
+              <span aria-hidden="true">&larr;</span> {previousPage.title}
             </Link>
           </dd>
         </div>
@@ -52,8 +57,7 @@ const Component: React.FC<DocsStepperProps> = ({ pages, currentPage }) => {
               to={manager.pagePath(nextPage.id)}
               className="text-base font-semibold text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
             >
-              {nextPage.jaenPageMetadata?.title}{" "}
-              <span aria-hidden="true">&rarr;</span>
+              {nextPage.title} <span aria-hidden="true">&rarr;</span>
             </Link>
           </dd>
         </div>

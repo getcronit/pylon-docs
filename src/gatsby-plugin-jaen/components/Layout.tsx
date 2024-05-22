@@ -291,8 +291,20 @@ const Layout: React.FC<LayoutProps> = ({ children, pageProps }) => {
             {children}
           </article>
           <DocsStepper
-            pages={[page, ...docsIndex.childPages]}
-            currentPage={page}
+            pages={[
+              {
+                id: "JaenPage /",
+                title: "Introduction",
+              },
+              ...docsIndex.childPages.map((doc) => ({
+                id: doc.id,
+                title: doc.jaenPageMetadata?.title || "Untitled",
+              })),
+            ]}
+            currentPage={{
+              id: page.jaenPageId,
+              title: page.jaenPageMetadata?.title || "Untitled",
+            }}
           />
         </div>
         <div className="hidden xl:sticky xl:top-[4.5rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:py-16 xl:pr-6">
