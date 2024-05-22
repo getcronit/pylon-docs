@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link, HeadFC, PageProps } from "gatsby";
+import { Link, HeadFC, PageProps, graphql } from "gatsby";
 import { PageConfig } from "@atsnek/jaen";
 
 const NotFoundPage: React.FC<PageProps> = () => {
@@ -31,3 +31,28 @@ export { Head } from "@atsnek/jaen";
 export const pageConfig: PageConfig = {
   label: "404",
 };
+
+export const query = graphql`
+  query ($jaenPageId: String!) {
+    jaenPage(id: { eq: $jaenPageId }) {
+      ...JaenPageData
+      childPages {
+        ...JaenPageChildrenData
+      }
+    }
+    allJaenPage(filter: { id: { in: ["JaenPage /docs/"] } }) {
+      nodes {
+        id
+        jaenPageMetadata {
+          title
+          blogPost {
+            category
+          }
+        }
+        childPages {
+          ...JaenPageChildrenData
+        }
+      }
+    }
+  }
+`;

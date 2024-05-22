@@ -17,6 +17,22 @@ export const pageConfig: PageConfig = {
 
 export const query = graphql`
   query ($jaenPageId: String!) {
-    ...JaenPageQuery
+    jaenPage(id: { eq: $jaenPageId }) {
+      ...JaenPageData
+    }
+    allJaenPage(filter: { id: { in: ["JaenPage /docs/"] } }) {
+      nodes {
+        id
+        jaenPageMetadata {
+          title
+          blogPost {
+            category
+          }
+        }
+        childPages {
+          ...JaenPageChildrenData
+        }
+      }
+    }
   }
 `;
