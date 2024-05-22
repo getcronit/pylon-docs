@@ -278,12 +278,22 @@ const Layout: React.FC<LayoutProps> = ({ children, pageProps }) => {
                 {page.jaenPageMetadata?.description}
               </p>
 
-              {!isHomePage ? <hr /> : <br />}
+              {!isHomePage ? (
+                <>
+                  <hr />
+                  <br />
+                </>
+              ) : (
+                <br />
+              )}
             </Prose>
 
             {children}
           </article>
-          <DocsStepper pages={[page, ...docsIndex.childPages]} currentPage={page} />
+          <DocsStepper
+            pages={[page, ...docsIndex.childPages]}
+            currentPage={page}
+          />
         </div>
         <div className="hidden xl:sticky xl:top-[4.5rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:py-16 xl:pr-6">
           <nav aria-labelledby="on-this-page-title" className="w-56">
