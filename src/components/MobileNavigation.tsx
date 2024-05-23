@@ -66,7 +66,7 @@ export const MobileNavigation: React.FC<{
 
         <SheetContent
           side="left"
-          className="min-h-full w-full max-w-xs bg-white px-4 pt-5 pb-12 dark:bg-slate-900 sm:px-6"
+          className="min-h-full w-full max-w-xs bg-white px-4 pt-5 pb-12 dark:bg-slate-900 sm:px-6 overflow-scroll"
         >
           <div className="flex items-center">
             <Logomark className="w-[200px]" />
