@@ -43,6 +43,7 @@ export const query = graphql`
     allJaenPage(filter: { id: { in: ["JaenPage /docs/"] } }) {
       nodes {
         id
+        childPagesOrder
         jaenPageMetadata {
           title
           blogPost {
