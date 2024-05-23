@@ -9,9 +9,9 @@ import {
 import { navigate } from "gatsby";
 
 const docSearchConfig = {
-  appId: "R2IYF7ETH7",
-  apiKey: "599cec31baffa4868cae4e79f180729b",
-  indexName: "docsearch",
+  appId: "8NE32M52AM",
+  apiKey: "70c5ff3e660a458f74faec036e066188",
+  indexName: "pylon-cronit",
 };
 
 const Hit: React.FC<{
