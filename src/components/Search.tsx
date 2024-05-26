@@ -18,7 +18,12 @@ const Hit: React.FC<{
   hit: InternalDocSearchHit | StoredDocSearchHit;
   children: React.ReactNode;
 }> = ({ hit, children }) => {
-  return <Link to={hit.url}>{children}</Link>;
+  // Remove the origin from the hit.url
+  const url = new URL(hit.url);
+
+  const relativeUrl = url.pathname + url.hash;
+
+  return <Link to={relativeUrl}>{children}</Link>;
 };
 
 const SearchIcon: React.FC<SVGProps<SVGSVGElement>> = (props) => {
