@@ -13,8 +13,6 @@ import {
 import { Link } from "gatsby-plugin-jaen";
 import { SVGProps, useCallback, useEffect, useMemo, useState } from "react";
 
-import "@docsearch/css";
-import "../../styles/prism.css";
 import { Hero } from "@/components/Hero";
 import { Prose } from "@/components/Prose";
 import useTocNavigation, {
